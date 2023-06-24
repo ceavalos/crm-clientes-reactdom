@@ -2,6 +2,9 @@ import { useLoaderData } from 'react-router-dom'
 import { obtenerClientes } from '../data/clientes'
 import Cliente from '../components/Cliente';
 
+//funcion de react router dom que se ejecutara
+// cuando el componente este listo, como el useEfect pero
+// es de react router dom
 export function loader() { 
     const clientes = obtenerClientes()
     return clientes

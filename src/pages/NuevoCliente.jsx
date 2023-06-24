@@ -7,6 +7,11 @@ export async function action({request}) {
     const formData = await request.formData()
     const datos = Object.fromEntries(formData)
     const email = formData.get('email')
+    //otro ejemplo de como recuperar los datos
+    const datosejm = Object.fromEntries(datos)
+    console.log(datosejm)
+    // otro ejemplo
+    
 
     // Validación
     const errores = []
